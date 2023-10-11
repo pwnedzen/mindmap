@@ -35,6 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void resetGame() {
     setState(() {
       _game.initGame();
+      _game.shuffleCards();  // Shuffle cards when resetting game
       tries = 0;
       score = 0;
     });
